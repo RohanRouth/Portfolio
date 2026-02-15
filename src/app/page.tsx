@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import ParticleBackground from "@/components/ParticleBackground";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
@@ -12,7 +13,8 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
+      <ParticleBackground />
       <Header />
       <main>
         <Hero />
@@ -26,6 +28,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { personalInfo } from "@/data/personal";
-import ParticleBackground from "./ParticleBackground";
 
 export default function Hero() {
   return (
@@ -11,8 +10,6 @@ export default function Hero() {
       id="hero"
       className="relative flex min-h-screen items-center justify-center overflow-hidden px-6"
     >
-      <ParticleBackground />
-
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col-reverse items-center gap-12 md:flex-row md:items-center md:gap-16">
         {/* Text content */}
         <div className="flex-1">
@@ -105,9 +102,9 @@ export default function Hero() {
             <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-accent/20 to-transparent" />
             {/* Replace /images/headshot.jpg with your photo */}
             <img
-              src="/images/headshot.jpg"
+              src="/images/headshot.png"
               alt={personalInfo.name}
-              className="relative h-full w-full rounded-full border-2 border-zinc-800 object-cover"
+              className="relative h-full w-full rounded-full border-2 border-zinc-800 object-cover object-top"
               onError={(e) => {
                 // Fallback: hide image and show initials
                 const target = e.currentTarget;

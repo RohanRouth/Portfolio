@@ -61,7 +61,7 @@ export default function ParticleBackground() {
       }
 
       // Draw connections
-      ctx!.strokeStyle = "rgba(96, 165, 250, 0.06)";
+      ctx!.strokeStyle = "rgba(96, 165, 250, 0.15)";
       ctx!.lineWidth = 1;
       for (let i = 0; i < dots.length; i++) {
         for (let j = i + 1; j < dots.length; j++) {
@@ -69,7 +69,7 @@ export default function ParticleBackground() {
           const dy = dots[i].y - dots[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < CONNECTION_DIST) {
-            const opacity = 0.06 * (1 - dist / CONNECTION_DIST);
+            const opacity = 0.15 * (1 - dist / CONNECTION_DIST);
             ctx!.strokeStyle = `rgba(96, 165, 250, ${opacity})`;
             ctx!.beginPath();
             ctx!.moveTo(dots[i].x, dots[i].y);
@@ -80,10 +80,10 @@ export default function ParticleBackground() {
       }
 
       // Draw dots
-      ctx!.fillStyle = "rgba(96, 165, 250, 0.15)";
+      ctx!.fillStyle = "rgba(96, 165, 250, 0.35)";
       for (const dot of dots) {
         ctx!.beginPath();
-        ctx!.arc(dot.x, dot.y, 1.5, 0, Math.PI * 2);
+        ctx!.arc(dot.x, dot.y, 2, 0, Math.PI * 2);
         ctx!.fill();
       }
 
@@ -103,7 +103,7 @@ export default function ParticleBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="pointer-events-none absolute inset-0 z-0"
+      className="pointer-events-none fixed inset-0 z-0"
       aria-hidden="true"
     />
   );

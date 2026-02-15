@@ -21,11 +21,11 @@ export const openSourceContributions: OpenSourceContribution[] = [
 ];
 
 export const certifications: Certification[] = [
-  // Add your certifications here
-  // {
-  //   name: "Google Cloud Professional ML Engineer",
-  //   issuer: "Google Cloud",
-  //   date: "2024",
-  //   url: "https://...",
-  // },
+  {
+    name: "Google Cloud Professional Machine Learning Engineer",
+    issuer: "Google Cloud",
+    date: "2025",
+    url: "https://www.credly.com/badges/5a726de8-82be-472f-8d56-d22e435817e2/public_url",
+    badge: "/images/image.png",
+  },
 ];

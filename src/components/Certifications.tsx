@@ -15,8 +15,15 @@ export default function Certifications() {
             key={cert.name}
             className="rounded-lg border border-zinc-800 bg-zinc-900/30 px-5 py-4"
           >
-            <div className="flex items-start justify-between">
-              <div>
+            <div className="flex items-center gap-4">
+              {cert.badge && (
+                <img
+                  src={cert.badge}
+                  alt={`${cert.name} badge`}
+                  className="h-16 w-16 shrink-0 object-contain"
+                />
+              )}
+              <div className="flex-1">
                 <h3 className="text-sm font-medium text-zinc-200">
                   {cert.name}
                 </h3>

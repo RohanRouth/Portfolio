@@ -6,7 +6,7 @@ export const experiences: Experience[] = [
     client: "Mayo Clinic",
     role: "MLOps Engineer",
     period: "2023 — Present",
-    logo: "/images/citiustech.png",
+    logo: "/images/mayo_clinic_logo.jpeg",
     bullets: [
       "Built 3 production-grade clinical summarization APIs using FastAPI, serving real-time requests in regulated healthcare environments.",
       "Cut LLM latency from ~60s to <30s via pipeline optimization, including prompt restructuring and model configuration tuning.",
@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
     company: "Raven Risk AI",
     role: "Data Science Engineer",
     period: "2022 — 2023",
-    logo: "/images/ravenrisk.png",
+    logo: "/images/raven_risk_logo.jpeg",
     bullets: [
       "Built and optimized RAG systems, improving retrieval efficiency by 22% through architectural improvements.",
       "Designed hybrid retrieval (dense + BM25 + late interaction), boosting relevance by 16% on benchmark evaluations.",
